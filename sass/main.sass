@@ -1,0 +1,49 @@
+// color variables
+$cyan: hsl(179, 62%, 43%)
+$light-cyan: hsl(179, 47%, 52%)
+$bright-yellow: hsl(71, 73%, 54%)
+$light-grey: hsl(204, 43%, 93%)
+$grayish-blue: hsl(218, 22%, 67%)
+
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700&display=swap)
+
+// breakpoints
+$breakpoint: 550px
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 16px
+    font-family: Karla
+
+// Mobile Screen
+body 
+    background-color: $light-grey
+.price-component
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(3, 1fr)
+    grid-gap: 10px
+    .join-our-community
+        background-color: white
+    .monthly-subcription
+        background-color: $cyan
+    .why-us
+        background-color: $light-cyan
+
+// Desktop screen
+@media screen and (min-width: $breakpoint)
+    .price-component
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        .join-our-community
+            grid-column: 1/3
+            grid-row: 1/2
+        .monthly-subcription
+            grid-column: 1/2
+            grid-row: 2/3
+        .why-us
+            grid-column: 2/3
+            grid-row: 2/3
