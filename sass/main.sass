@@ -16,6 +16,7 @@ $breakpoint: 550px
     box-sizing: border-box
     font-size: 16px
     font-family: Karla
+    font-weight: 400
 
 // Mobile Screen
 body 
@@ -24,14 +25,49 @@ body
     display: grid
     grid-template-columns: 1fr
     grid-template-rows: repeat(3, 1fr)
-    grid-gap: 10px
+    max-width: 650px
+    margin: auto
+    > section 
+        padding: 1.5em
     .join-our-community
         background-color: white
+        h1 
+            color: $cyan
+            font-weight: 700
+        h2 
+            color: $bright-yellow
+            font-weight: 700
+        p
+            color: $grayish-blue
+
     .monthly-subcription
         background-color: $cyan
+        h2 
+            color: $light-grey
+            font-weight: 700
+        .price-container
+            display: flex
+            flex-direction: row
+            .price
+                color: $light-grey
+                font-size: 27px
+                font-weight: 700
+            .period
+                color: $light-grey
+        p
+            color: $light-grey
+        button
+            background-color: $bright-yellow
+            color: $light-grey
     .why-us
         background-color: $light-cyan
-
+        h2 
+            color: $light-grey
+            font-weight: 700
+        ul 
+            list-style-type: none
+            li
+                color: $light-grey
 // Desktop screen
 @media screen and (min-width: $breakpoint)
     .price-component

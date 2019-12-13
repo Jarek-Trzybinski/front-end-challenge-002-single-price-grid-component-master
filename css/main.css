@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: Karla; }
+  font-family: Karla;
+  font-weight: 400; }
 
 body {
   background-color: #e5eff5; }
@@ -13,13 +14,51 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px; }
+  max-width: 650px;
+  margin: auto; }
+  .price-component > section {
+    padding: 1.5em; }
   .price-component .join-our-community {
     background-color: white; }
+    .price-component .join-our-community h1 {
+      color: #2ab2af;
+      font-weight: 700; }
+    .price-component .join-our-community h2 {
+      color: #c0df34;
+      font-weight: 700; }
+    .price-component .join-our-community p {
+      color: #98a6bd; }
   .price-component .monthly-subcription {
     background-color: #2ab2af; }
+    .price-component .monthly-subcription h2 {
+      color: #e5eff5;
+      font-weight: 700; }
+    .price-component .monthly-subcription .price-container {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row; }
+      .price-component .monthly-subcription .price-container .price {
+        color: #e5eff5;
+        font-size: 27px;
+        font-weight: 700; }
+      .price-component .monthly-subcription .price-container .period {
+        color: #e5eff5; }
+    .price-component .monthly-subcription p {
+      color: #e5eff5; }
+    .price-component .monthly-subcription button {
+      background-color: #c0df34;
+      color: #e5eff5; }
   .price-component .why-us {
     background-color: #4bbebc; }
+    .price-component .why-us h2 {
+      color: #e5eff5;
+      font-weight: 700; }
+    .price-component .why-us ul {
+      list-style-type: none; }
+      .price-component .why-us ul li {
+        color: #e5eff5; }
 
 @media screen and (min-width: 550px) {
   .price-component {
