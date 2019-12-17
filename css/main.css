@@ -13,64 +13,92 @@ body {
 .price-component {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  max-width: 650px;
-  margin: auto; }
+  grid-template-rows: repeat(3, auto);
+  max-width: 300px;
+  margin: 50px auto; }
   .price-component > section {
     padding: 1.5em; }
   .price-component .join-our-community {
-    background-color: white; }
+    background-color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
     .price-component .join-our-community h1 {
       color: #2ab2af;
-      font-weight: 700; }
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 1.3rem; }
     .price-component .join-our-community h2 {
       color: #c0df34;
-      font-weight: 700; }
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 1.3rem; }
     .price-component .join-our-community p {
-      color: #98a6bd; }
+      color: #98a6bd;
+      line-height: 1.8rem; }
   .price-component .monthly-subcription {
     background-color: #2ab2af; }
     .price-component .monthly-subcription h2 {
       color: #e5eff5;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 23px;
+      margin-bottom: 19px; }
     .price-component .monthly-subcription .price-container {
       display: -webkit-box;
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-              flex-direction: row; }
+              flex-direction: row;
+      margin-bottom: 10px;
+      -webkit-box-align: center;
+              align-items: center; }
       .price-component .monthly-subcription .price-container .price {
         color: #e5eff5;
-        font-size: 27px;
+        font-size: 33px;
         font-weight: 700; }
       .price-component .monthly-subcription .price-container .period {
-        color: #e5eff5; }
+        color: #50ccce; }
     .price-component .monthly-subcription p {
-      color: #e5eff5; }
+      color: #e5eff5;
+      margin-bottom: 25px; }
     .price-component .monthly-subcription button {
       background-color: #c0df34;
-      color: #e5eff5; }
+      color: #e5eff5;
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 30px;
+      border-radius: 7px;
+      border: 0; }
+    .price-component .monthly-subcription button:hover, .price-component .monthly-subcription button:focus {
+      background-color: #cbdd6e; }
   .price-component .why-us {
-    background-color: #4bbebc; }
+    background-color: #4bbebc;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px; }
     .price-component .why-us h2 {
       color: #e5eff5;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 23px;
+      margin-bottom: 19px; }
     .price-component .why-us ul {
       list-style-type: none; }
       .price-component .why-us ul li {
-        color: #e5eff5; }
+        color: #e5eff5;
+        margin-bottom: 3px; }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
   .price-component {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: auto 1fr;
+    max-width: 600px; }
     .price-component .join-our-community {
       grid-column: 1/3;
       grid-row: 1/2; }
     .price-component .monthly-subcription {
       grid-column: 1/2;
-      grid-row: 2/3; }
+      grid-row: 2/3;
+      border-bottom-left-radius: 7px; }
     .price-component .why-us {
       grid-column: 2/3;
-      grid-row: 2/3; } }
+      grid-row: 2/3;
+      border-bottom-left-radius: 0; } }
