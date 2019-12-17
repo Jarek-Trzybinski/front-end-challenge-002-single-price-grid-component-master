@@ -4,12 +4,13 @@ $light-cyan: hsl(179, 47%, 52%)
 $bright-yellow: hsl(71, 73%, 54%)
 $light-grey: hsl(204, 43%, 93%)
 $grayish-blue: hsl(218, 22%, 67%)
+$period-color: hsl(181, 56%, 56%)
 
 // fonts
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700&display=swap)
 
 // breakpoints
-$breakpoint: 550px
+$breakpoint: 700px
 *
     margin: 0
     padding: 0
@@ -24,62 +25,90 @@ body
 .price-component
     display: grid
     grid-template-columns: 1fr
-    grid-template-rows: repeat(3, 1fr)
-    max-width: 650px
-    margin: auto
+    grid-template-rows: repeat(3, auto)
+    max-width: 300px
+    margin: 50px auto
     > section 
         padding: 1.5em
     .join-our-community
         background-color: white
+        border-top-left-radius: 7px
+        border-top-right-radius: 7px
         h1 
             color: $cyan
+            font-size: 26px
             font-weight: 700
+            margin-bottom: 1.3rem
         h2 
             color: $bright-yellow
+            font-size: 19px
             font-weight: 700
+            margin-bottom: 1.3rem
         p
             color: $grayish-blue
+            line-height: 1.8rem
+
 
     .monthly-subcription
         background-color: $cyan
         h2 
             color: $light-grey
             font-weight: 700
+            font-size: 23px
+            margin-bottom: 19px
         .price-container
             display: flex
             flex-direction: row
+            margin-bottom: 10px
+            align-items: center
             .price
                 color: $light-grey
-                font-size: 27px
+                font-size: 33px
                 font-weight: 700
             .period
-                color: $light-grey
+                color: $period-color
         p
             color: $light-grey
+            margin-bottom: 25px
         button
             background-color: $bright-yellow
             color: $light-grey
+            width: 100% 
+            font-size: 16px
+            padding: 10px 30px
+            border-radius: 7px
+            border: 0
+        button:hover, button:focus 
+            background-color: #cbdd6e
     .why-us
         background-color: $light-cyan
+        border-bottom-left-radius: 7px
+        border-bottom-right-radius: 7px
         h2 
             color: $light-grey
             font-weight: 700
+            font-size: 23px
+            margin-bottom: 19px
         ul 
             list-style-type: none
             li
                 color: $light-grey
+                margin-bottom: 3px
 // Desktop screen
 @media screen and (min-width: $breakpoint)
     .price-component
         display: grid
         grid-template-columns: 1fr 1fr
-        grid-template-rows: 1fr 1fr
+        grid-template-rows: auto 1fr
+        max-width: 600px
         .join-our-community
             grid-column: 1/3
             grid-row: 1/2
         .monthly-subcription
             grid-column: 1/2
             grid-row: 2/3
+            border-bottom-left-radius: 7px
         .why-us
             grid-column: 2/3
             grid-row: 2/3
+            border-bottom-left-radius: 0
