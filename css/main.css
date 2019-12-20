@@ -16,7 +16,7 @@ body {
   grid-template-rows: repeat(3, auto);
   max-width: 300px;
   margin: 50px auto; }
-  .price-component > section {
+  .price-component > div {
     padding: 1.5em; }
   .price-component .join-our-community {
     background-color: white;
