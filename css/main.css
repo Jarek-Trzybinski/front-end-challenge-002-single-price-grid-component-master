@@ -18,72 +18,75 @@ body {
   margin: 50px auto; }
   .price-component > div {
     padding: 1.5em; }
-  .price-component .join-our-community {
-    background-color: white;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; }
-    .price-component .join-our-community h1 {
-      color: #2ab2af;
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 1.3rem; }
-    .price-component .join-our-community h2 {
-      color: #c0df34;
-      font-size: 19px;
-      font-weight: 700;
-      margin-bottom: 1.3rem; }
-    .price-component .join-our-community p {
-      color: #98a6bd;
-      line-height: 1.8rem; }
-  .price-component .monthly-subcription {
-    background-color: #2ab2af; }
-    .price-component .monthly-subcription h2 {
+
+.join-our-community {
+  background-color: white;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; }
+  .join-our-community h1 {
+    color: #2ab2af;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 1.3rem; }
+  .join-our-community h2 {
+    color: #c0df34;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 1.3rem; }
+  .join-our-community p {
+    color: #98a6bd;
+    line-height: 1.8rem; }
+
+.monthly-subcription {
+  background-color: #2ab2af; }
+  .monthly-subcription h2 {
+    color: #e5eff5;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 19px; }
+  .monthly-subcription .price-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+            align-items: center; }
+  .monthly-subcription .price {
+    color: #e5eff5;
+    font-size: 33px;
+    font-weight: 700; }
+  .monthly-subcription .period {
+    color: #51cacd; }
+  .monthly-subcription p {
+    color: #e5eff5;
+    margin-bottom: 25px; }
+  .monthly-subcription button {
+    background-color: #c0df34;
+    color: #e5eff5;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: 0; }
+  .monthly-subcription button:hover, .monthly-subcription button:focus {
+    background-color: #cbdd6e; }
+
+.why-us {
+  background-color: #4bbebc;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
+  .why-us h2 {
+    color: #e5eff5;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 19px; }
+  .why-us ul {
+    list-style-type: none; }
+    .why-us ul li {
       color: #e5eff5;
-      font-weight: 700;
-      font-size: 23px;
-      margin-bottom: 19px; }
-    .price-component .monthly-subcription .price-container {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-              flex-direction: row;
-      margin-bottom: 10px;
-      -webkit-box-align: center;
-              align-items: center; }
-      .price-component .monthly-subcription .price-container .price {
-        color: #e5eff5;
-        font-size: 33px;
-        font-weight: 700; }
-      .price-component .monthly-subcription .price-container .period {
-        color: #51cacd; }
-    .price-component .monthly-subcription p {
-      color: #e5eff5;
-      margin-bottom: 25px; }
-    .price-component .monthly-subcription button {
-      background-color: #c0df34;
-      color: #e5eff5;
-      width: 100%;
-      font-size: 16px;
-      padding: 10px 30px;
-      border-radius: 7px;
-      border: 0; }
-    .price-component .monthly-subcription button:hover, .price-component .monthly-subcription button:focus {
-      background-color: #cbdd6e; }
-  .price-component .why-us {
-    background-color: #4bbebc;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px; }
-    .price-component .why-us h2 {
-      color: #e5eff5;
-      font-weight: 700;
-      font-size: 23px;
-      margin-bottom: 19px; }
-    .price-component .why-us ul {
-      list-style-type: none; }
-      .price-component .why-us ul li {
-        color: #e5eff5;
-        margin-bottom: 3px; }
+      margin-bottom: 3px; }
 
 @media screen and (min-width: 700px) {
   .price-component {
